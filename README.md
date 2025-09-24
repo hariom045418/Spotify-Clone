@@ -12,37 +12,37 @@ Welcome to the SpotifyClone repository! This project aims to recreate the fronte
 
 ---
 
-## 🚀 How to Use
+## 📚 How to Use
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/hariom045418/Spotify-Clone.git
-
+```
 2. Open index.html in your browser.
 
-🌐 Click Here to Demo:
+🚀 Click Here to Demo:
 
 👉 Live Demo Link
 
-🔁 Replace with your actual GitHub Pages link after deployment.
+ https://hariom045418.github.io/Spotify-Clone/
 
 🖼️ Preview of Spotify Clone:
 
-💡 ![alt text](image-2.png)
+ ![alt text](preview.png)
 
-🤝 Contribution Guidelines
+Contribution Guidelines
 
 We welcome contributions from the community to improve and enhance the SpotifyClone project. If you're interested in contributing, please follow these guidelines:
 
-Fork the repository and create a new branch for your feature or bug fix.
+- Fork the repository and create a new branch for your feature or bug fix.
 
-Ensure your code follows the existing coding style and conventions.
+- Ensure your code follows the existing coding style and conventions.
 
-Write clear and concise commit messages.
+- Write clear and concise commit messages.
 
-Test your changes thoroughly.
+- Test your changes thoroughly.
 
-Submit a pull request detailing the changes you’ve made and why they are necessary.
+- Submit a pull request detailing the changes you’ve made and why they are necessary.
 
 Thank you for your interest in the SpotifyClone project! If you have any questions or feedback, please don’t hesitate to reach out to us. Happy coding!

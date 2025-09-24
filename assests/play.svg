@@ -1,0 +1,9 @@
+<svg height="800px" width="800px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- ✅ Green Circle -->
+  <circle cx="256" cy="256" r="256" fill="#1fdf64"/>
+
+  <!-- ✅ Black Play Button -->
+  <polygon fill="#000000" points="200,150 380,256 200,362"/>
+  
+</svg>

@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-clone:Music for everyone</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="spoti">
+                <img src="./assests/logo.svg" alt="Spotify Logo">
+            </div>
+            <div class="home">
+                <div class="home_svg">
+                    <img src="./assests/home.svg" alt="home">
+                </div>
+                <div class="input">
+                    <div>
+                        <img class="tooltip" id="search" src="./assests/input_search.svg" alt="search">
+                    </div>
+                    <input id="input" type="text" placeholder="What do you want to play?">
+                    <div class="shortcut">
+                        <span id="ctrl">Ctrl</span>
+                        <span id="k">K</span>
+                    </div>
+                    <button id="bucket">
+                        <img id="bucket-img" src="./assests/input_bucket.svg" alt="bucket">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="navbar2">
+            <button>Premium</button>
+            <button>Support</button>
+            <button>Download</button>
+            <button>|</button>
+            <button class="download_button"><img id="download" src="./assests/nav_download.svg" alt="download">Install
+                App</button>
+            <button>Sign up</button>
+            <nav class="login">Log in</nav>
+        </div>
+    </div>
+    <!-- ------main body----- -->
+    <div class="body">
+        <!-- --------------left section----------- -->
+        <div class="left">
+            <div class="library">
+                <div class="icon-h">
+                    <img id="icon-h-img" src="./assests/library-left.svg" alt="">
+                    <h1>Your Library</h1>
+                </div>
+                <img src="./assests/plus.svg" alt="plus">
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <p class="p1">Create your first playlist</p>
+                    <p class="p2">It's easy,we'll help you</p>
+                    <button><span>Create playlist</span></button>
+                </div>
+                <div class="box">
+                    <p class="p1">Let's find some podcasts to follow</p>
+                    <p class="p2">We'll keep you updated on new episodes</p>
+                    <button><span>Browse podcasts</span></button>
+                </div>
+            </div>
+            <div class="left-foot">
+                <p>Legal</p>
+                <p>safety & PrivacyCenter</p>
+                <p>Privacy Policy</p>
+                <p>Cookies</p>
+                <p>About ads</p>
+                <p>Accessibility</p>
+            </div>
+        </div>
+        <!----------right section------------------>
+        <div class="right">
+            <!-- first line -->
+            <div class="righ-1">
+                <div class="writing">
+                    <h1>Trending songs</h1>
+                    <span>show all</span>
+                </div>
+                <div class="playlist-container">
+                    <button class="scroll-btn left">&#10094;</button>
+                    <div class="cards" id="playlist">
+                        <div class="card" data-src="./songs/nagada.mp3" data-title="Nagada Nagada"
+                            data-artist="Sonu Nigam" data-img="./image1.jpeg">
+                            <img src="./line1images/image1.jpeg" alt="">
+                            <h2>Nagada Nagada</h2>
+                            <p>Sonu Nigam</p>
+
+                            <!-- Hover Play Button -->
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card" data-src="./songs/shapeofyou.mp3" data-title="Shape of You"
+                            data-artist="Ed Sheeran" data-img="./image2.jpeg">
+                            <img src="././line1images/image2.jpeg" alt="">
+                            <h2>Shape of You</h2>
+                            <p>Ed Sheeran</p>
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card" data-src="./songs/believer.mp3" data-title="Believer"
+                            data-artist="Imagine Dragons" data-img="./image3.jpeg">
+                            <img src="././line1images/image3.jpeg" alt="">
+                            <h2>Believer</h2>
+                            <p>Imagine Dragons</p>
+
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card" data-src="./songs/kesariya.mp3" data-title="Kesariya"
+                            data-artist="Arijit Singh" data-img="./image4.jpeg">
+                            <img src="././line1images/image4.jpeg" alt="">
+                            <h2>Kesariya</h2>
+                            <p>Arijit Singh</p>
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="card" data-src="./songs/kesariya.mp3">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image5.jpeg" alt="">
+                            <h1>AZUL</h1>
+                            <p>Guru Randhava, Gurjit Gill, Lavish Dhiman</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image6.jpeg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image7.jpeg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image8.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image9.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image10.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image11.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image12.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image13.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image14.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+            </div>
+            <!-- last mai add kiya recently add -->
+            <div class="right-1">
+                <div class="writing">
+                    <h1>Recently played</h1>
+                    <span>show all</span>
+                </div>
+                <div class="playlist-container">
+                    <button class="scroll-btn left">&#10094;</button>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image13.jpg" alt="">
+                            <h1>All Outs OOs Hindi</h1>
+                        </div>
+                        <div class="card ">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line1images/image12.jpg" alt="">
+                            <h1>Hots Hits Hindi</h1>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+            </div>
+            <!-- line2
+line2 -->
+            <div class="right-1">
+                <div class="writing">
+                    <h1>Popular artist</h1>
+                    <span>show all</span>
+                </div>
+                <div class="playlist-container">
+                    <button class="scroll-btn left">&#10094;</button>
+                    <div class="cards">
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image1.jpeg" alt="">
+                            <h1>Pritam</h1>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image2.webp" alt="">
+                            <h1>A.R.Rahman</h1>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image3.jpeg" alt="">
+                            <h1>Arjit Singh</h1>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image4.jpeg" alt="">
+                            <h1>Sachin-Jigar</h1>
+                            <p>Artist</p>
+                        </div>
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image5.jpeg" alt="">
+                            <h1>Vishal-Shekar</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image6.jpeg" alt="">
+                            <h1>AtifAslam</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card circle-image">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line2images/image7.jpeg" alt="">
+                            <h1>Anirudh Ravichandar</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- line3 -->
+            <div class="right-1">
+                <div class="writing">
+                    <h1>Popular albums and singles</h1>
+                    <span>show all</span>
+                </div>
+
+
+                <div class="playlist-container">
+                    <button class="scroll-btn left">&#10094;</button>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card1.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card2.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card3.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card4.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card5.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card6.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card7.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card8.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card9.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card10.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card11.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card12.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card13.jpg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                        <div class="card">
+                            <div class="circle-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                    width="24px" fill="black"> <!-- yaha black kar diya -->
+                                    <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                </svg>
+                            </div>
+                            <img src="./line3images/card14.jpeg" alt="">
+                            <h1>For A Reason</h1>
+                            <p>Karan Aujla, likky</p>
+                        </div>
+                    </div>
+
+                    <button class="scroll-btn right">&#10095;</button>
+                </div>
+                <!-- line4 -->
+                <div class="right-1">
+                    <div class="writing">
+                        <h1>Popular radio</h1>
+                        <span>show all</span>
+                    </div>
+
+                    <div class="playlist-container">
+                        <button class="scroll-btn left">&#10094;</button>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card15.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card16.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card17.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card18.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card19.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card20.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card21.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card22.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card23.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card24.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card25.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card26.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card27.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                            <div class="card">
+                                <div class="circle-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                        width="24px" fill="black"> <!-- yaha black kar diya -->
+                                        <path d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                    </svg>
+                                </div>
+                                <img src="./line4images/card28.jpg" alt="">
+                                <h1>For A Reason</h1>
+                                <p>Karan Aujla, likky</p>
+                            </div>
+                        </div>
+                        <button class="scroll-btn right">&#10095;</button>
+                    </div>
+                    <!-- line5 -->
+                    <div class="right-1">
+                        <div class="writing">
+                            <h1>Featured Charts</h1>
+                            <span>show all</span>
+                        </div>
+                        <div class="playlist-container">
+                            <button class="scroll-btn left">&#10094;</button>
+                            <div class="cards">
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image1.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image2.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image3.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image4.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image5.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div><img src="./line5images/image6.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image6.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image2.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image1.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image3.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image5.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image6.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image4.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                                <div class="card">
+                                    <div class="circle-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                            width="24px" fill="black"> <!-- yaha black kar diya -->
+                                            <path
+                                                d="M320-200v-560l440 280-440 280Zm80-280Zm0 134 210-134-210-134v268Z" />
+                                        </svg>
+                                    </div>
+                                    <img src="./line5images/image3.jpg" alt="">
+                                    <h1>For A Reason</h1>
+                                    <p>Karan Aujla, likky</p>
+                                </div>
+                            </div>
+                            <button class="scroll-btn right">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- Right side footer -->
+            <div class="secLastFooter">
+                <div class="footerPara">
+                    <div class="column">
+                        <h4>Company</h4>
+                        <p>About</p>
+                        <p>Jobs</p>
+                        <p>For the Record</p>
+                    </div>
+
+                    <div class="column">
+                        <h4>Communities</h4>
+                        <p>For Artists</p>
+                        <p>Developers</p>
+                        <p>Advertising</p>
+                        <p>Investors</p>
+                        <p>Vendors</p>
+                    </div>
+
+                    <div class="column">
+                        <h4>Useful Links</h4>
+                        <p>Support</p>
+                        <p>Free Mobile App</p>
+                        <p>Popular by Country</p>
+                        <p>Import your music</p>
+                    </div>
+
+                    <div class="column">
+                        <h4>Spotify Plans</h4>
+                        <p>Premium Individual</p>
+                        <p>Premium Duo</p>
+                        <p>Premium Family</p>
+                        <p>Premium Student</p>
+                        <p>Spotify Free</p>
+                    </div>
+                </div>
+                <div class="footerIcon">
+                    <button id="a"><img src="./assests/insta.svg" alt=""></button>
+                    <button id="a"><img src="./assests/twiter.svg" alt=""></button>
+                    <button id="a"><img src="./assests/facebook.svg" alt=""></button>
+
+                </div>
+
+            </div>
+            <div class="lastfooter">
+                <p>© 2025 Spotify AB</p>
+            </div>
+        </div>
+
+        <!-- FOOTER START -->
+        <div class="footer">
+            <div class="foot1">
+                <div class="img">
+                    <img src="./footer/foot-image.jpeg" alt="Album Cover" id="footer-img">
+                </div>
+                <div class="pa">
+                    <h2 id="song-title">Song Name</h2>
+                    <p id="now-playing">Ajay-Atul, Shreya Ghoshal</p>
+                </div>
+                <div class="f-icon">
+                    <img src="./footer/foot-icon.svg" alt="">
+                </div>
+            </div>
+            <div class="foot2">
+                <div class="play">
+                    <img src="./footer/player_icon1.png" alt="">
+                    <img src="./footer/player_icon2.png" alt="">
+                    <!-- Play/Pause Button -->
+                    <img id="f-img3" src="./footer/player_icon3.png" alt="Play" style="height: 2rem;">
+                    <img src="./footer/player_icon4.png" alt="">
+                    <img src="./footer/player_icon5.png" alt="">
+                </div>
+                <div class="progres">
+                    <span class="current-time">00:00</span>
+                    <input class="progres-bar" type="range" min="0" max="100" step="1">
+                    <span class="tot-time">0:00</span>
+                </div>
+            </div>
+            <div class="foot3">
+                <img src="./footer/foot1.svg" alt="">
+                <img src="./footer/foot2.svg" alt="">
+                <img src="./footer/foot3.svg" alt="">
+                <img src="./footer/foot4.svg" alt="">
+                <img src="./footer/foot5.svg" alt="">
+                <input type="range" min="0" max="100" class="volume">
+                <img src="./footer/foot6.svg" alt="">
+                <img src="./footer/foot7.svg" alt="">
+            </div>
+        </div>
+
+        <!-- Hidden audio player -->
+        <audio id="audio-player"></audio>
+        <!-- FOOTER END -->
+
+
+        <script src="app.js"></script>
+</body>
+
+</html>

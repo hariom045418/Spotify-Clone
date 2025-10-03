@@ -23,7 +23,6 @@ git clone https://github.com/hariom045418/Spotify-Clone.git
 
 🚀 Click Here to Demo:
 
-👉 Live Demo Link
 
  https://hariom045418.github.io/Spotify-Clone/
 
